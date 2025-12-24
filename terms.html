@@ -1,0 +1,164 @@
+<!-- terms.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms of Service | Slide Translator Add-on</title>
+  <style>
+    :root{
+      --bg:#0b1220; --text:#e9eefc; --muted:#a9b5d1; --line:rgba(255,255,255,.10);
+      --shadow:0 12px 30px rgba(0,0,0,.35); --radius:16px; --max:980px;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--sans); color:var(--text); background:var(--bg);
+      background: radial-gradient(1200px 700px at 18% 0%, rgba(126,226,200,.14), transparent 60%),
+                  radial-gradient(1200px 700px at 82% 10%, rgba(255,255,255,.06), transparent 55%),
+                  var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0 18px; gap:16px;
+    }
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
+    .logo{
+      width:44px; height:44px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(110,168,254,.95), rgba(126,226,200,.90));
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+      display:grid; place-items:center; font-weight:800; letter-spacing:.5px;
+    }
+    .brand h1{font-size:15px; margin:0}
+    .brand p{font-size:12px; margin:2px 0 0; color:var(--muted)}
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .navlink{
+      font-size:13px; padding:8px 10px; border:1px solid var(--line);
+      border-radius:12px; text-decoration:none; background: rgba(255,255,255,.03);
+    }
+    .navlink:hover{background:rgba(255,255,255,.06)}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+    }
+    h2{margin:0 0 6px; font-size:22px}
+    .meta{color:var(--muted); font-size:13px; margin:0 0 16px}
+    h3{margin:18px 0 8px; font-size:15px}
+    p,li{color:var(--muted); line-height:1.65; font-size:14px}
+    .callout{
+      margin-top:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      padding:12px 14px;
+      border-radius: 14px;
+      color: var(--text);
+    }
+    footer{
+      margin-top:18px; padding:16px 0 8px; color:var(--muted);
+      font-size:12px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      border-top:1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./index.html">
+        <div class="logo" aria-hidden="true">AR↔EN</div>
+        <div>
+          <h1>Slide Translator Add-on</h1>
+          <p>Terms of Service</p>
+        </div>
+      </a>
+      <nav>
+        <a class="navlink" href="./index.html">Home</a>
+        <a class="navlink" href="./privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h2>Terms of Service</h2>
+      <p class="meta">Effective date: <span id="effective"></span></p>
+
+      <div class="callout">
+        These terms govern your use of the Slide Translator Add-on for Google Slides (the “Service”).
+        If you do not agree, do not use the Service.
+      </div>
+
+      <h3>1) Service description</h3>
+      <p>
+        The Service translates slide content between Arabic and English and may adjust layout direction (RTL/LTR)
+        to improve readability. Translation quality can vary depending on content, formatting, and language nuances.
+      </p>
+
+      <h3>2) Acceptable use</h3>
+      <ul>
+        <li>You will use the Service only for lawful purposes and in compliance with applicable policies.</li>
+        <li>You are responsible for the content you translate and for reviewing outputs before publishing.</li>
+        <li>You will not attempt to disrupt or abuse the Service (e.g., excessive requests, bypassing limits).</li>
+      </ul>
+
+      <h3>3) Your content</h3>
+      <p>
+        You retain ownership of your content. You grant the Service the limited rights needed to process your content
+        solely to provide translation and layout flipping.
+      </p>
+
+      <h3>4) Third-party services</h3>
+      <p>
+        The Service may rely on third-party translation or AI providers. Their terms may apply to the extent they
+        govern the underlying translation processing.
+      </p>
+
+      <h3>5) Availability and changes</h3>
+      <p>
+        We may modify, suspend, or discontinue parts of the Service, and we may update these Terms from time to time.
+        Continued use after changes indicates acceptance of the updated Terms.
+      </p>
+
+      <h3>6) Disclaimers</h3>
+      <ul>
+        <li>The Service is provided “as is” without warranties of any kind.</li>
+        <li>We do not guarantee error-free translation, formatting, or uninterrupted operation.</li>
+        <li>You should validate outputs, especially for legal, safety, or compliance-related content.</li>
+      </ul>
+
+      <h3>7) Limitation of liability</h3>
+      <p>
+        To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential damages,
+        or for loss of data or business interruption arising from use of the Service.
+      </p>
+
+      <h3>8) Support</h3>
+      <p>
+        Support contact: <a href="mailto:support@yourdomain.tld">support@yourdomain.tld</a>
+      </p>
+
+      <h3>9) Governing law</h3>
+      <p>
+        These Terms are governed by the laws applicable in your jurisdiction. If you operate within an organization,
+        your internal policies and contracts may add additional requirements.
+      </p>
+    </main>
+
+    <footer>
+      <div>© <span id="yr"></span> Slide Translator Add-on</div>
+      <div><a href="./privacy.html">Privacy Policy</a></div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const d = new Date();
+      const opts = { year:"numeric", month:"long", day:"2-digit" };
+      document.getElementById("yr").textContent = String(d.getFullYear());
+      document.getElementById("effective").textContent = d.toLocaleDateString(undefined, opts);
+    })();
+  </script>
+</body>
+</html>

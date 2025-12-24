@@ -1,0 +1,161 @@
+<!-- privacy.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | Slide Translator Add-on</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#121a2b; --text:#e9eefc; --muted:#a9b5d1;
+      --line:rgba(255,255,255,.10); --shadow:0 12px 30px rgba(0,0,0,.35);
+      --radius:16px; --max:980px; --accent:#6ea8fe;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--sans); color:var(--text); background:var(--bg);
+      background: radial-gradient(1200px 700px at 15% 0%, rgba(110,168,254,.18), transparent 60%),
+                  radial-gradient(1200px 700px at 85% 10%, rgba(255,255,255,.06), transparent 55%),
+                  var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0 18px; gap:16px;
+    }
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
+    .logo{
+      width:44px; height:44px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(110,168,254,.95), rgba(126,226,200,.90));
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+      display:grid; place-items:center; font-weight:800; letter-spacing:.5px;
+    }
+    .brand h1{font-size:15px; margin:0}
+    .brand p{font-size:12px; margin:2px 0 0; color:var(--muted)}
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .navlink{
+      font-size:13px; padding:8px 10px; border:1px solid var(--line);
+      border-radius:12px; text-decoration:none; background: rgba(255,255,255,.03);
+    }
+    .navlink:hover{background:rgba(255,255,255,.06)}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line); border-radius:var(--radius);
+      box-shadow:var(--shadow); padding:20px;
+    }
+    h2{margin:0 0 6px; font-size:22px}
+    .meta{color:var(--muted); font-size:13px; margin:0 0 16px}
+    h3{margin:18px 0 8px; font-size:15px}
+    p,li{color:var(--muted); line-height:1.65; font-size:14px}
+    code{font-family:var(--mono); font-size:12.5px; color:#d7e3ff}
+    .box{
+      margin-top:14px;
+      border:1px solid rgba(110,168,254,.25);
+      background: rgba(110,168,254,.08);
+      padding:12px 14px;
+      border-radius: 14px;
+      color: var(--text);
+    }
+    footer{
+      margin-top:18px; padding:16px 0 8px; color:var(--muted);
+      font-size:12px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      border-top:1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./index.html">
+        <div class="logo" aria-hidden="true">AR↔EN</div>
+        <div>
+          <h1>Slide Translator Add-on</h1>
+          <p>Privacy Policy</p>
+        </div>
+      </a>
+      <nav>
+        <a class="navlink" href="./index.html">Home</a>
+        <a class="navlink" href="./terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h2>Privacy Policy</h2>
+      <p class="meta">Last updated: <span id="lastUpdated"></span></p>
+
+      <div class="box">
+        This policy is written for a Google Slides add-on that translates slide content between Arabic and English.
+        It is intended to clearly describe what data is processed, why, and how it is protected.
+      </div>
+
+      <h3>1) What data we process</h3>
+      <ul>
+        <li><strong>Slide content you select to translate</strong> (text in shapes, tables, speaker notes if enabled).</li>
+        <li><strong>Technical metadata</strong> needed to operate (e.g., request identifiers, timestamps, error codes).</li>
+      </ul>
+
+      <h3>2) What data we do not sell</h3>
+      <p>We do not sell your data, and we do not use your content for advertising.</p>
+
+      <h3>3) How translation is performed</h3>
+      <p>
+        The add-on may send text to a translation service/provider to return the translated output.
+        The specific provider depends on your deployment configuration (e.g., Google Translate or another AI provider).
+      </p>
+
+      <h3>4) Data retention</h3>
+      <ul>
+        <li><strong>Default:</strong> no persistent storage of slide content.</li>
+        <li><strong>Logs:</strong> operational logs may be retained for troubleshooting for a limited period, and should be redacted where feasible.</li>
+      </ul>
+
+      <h3>5) Access and permissions</h3>
+      <p>
+        The add-on requests only the minimum Google Workspace permissions required to read slide content and write translated output.
+        Access is scoped to the document(s) where you run the add-on.
+      </p>
+
+      <h3>6) Security controls</h3>
+      <ul>
+        <li>Transport security (HTTPS) for any network communications.</li>
+        <li>Role-based access and least privilege for operational accounts.</li>
+        <li>Monitoring and incident response procedures for abnormal behavior.</li>
+      </ul>
+
+      <h3>7) International transfers</h3>
+      <p>
+        Depending on your translation provider and hosting region, data may be processed outside your country.
+        You should configure providers/regions to meet your organization’s compliance requirements.
+      </p>
+
+      <h3>8) Contact</h3>
+      <p>
+        Privacy inquiries: <a href="mailto:privacy@yourdomain.tld">privacy@yourdomain.tld</a>
+      </p>
+
+      <h3>9) Changes to this policy</h3>
+      <p>
+        We may update this policy to reflect changes in the add-on or legal requirements. Updates will be posted on this page with a revised “Last updated” date.
+      </p>
+    </main>
+
+    <footer>
+      <div>© <span id="yr"></span> Slide Translator Add-on</div>
+      <div><a href="./terms.html">Terms of Service</a></div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const d = new Date();
+      document.getElementById("yr").textContent = String(d.getFullYear());
+      // Use an ISO-like but human-friendly date
+      const opts = { year:"numeric", month:"long", day:"2-digit" };
+      document.getElementById("lastUpdated").textContent = d.toLocaleDateString(undefined, opts);
+    })();
+  </script>
+</body>
+</html>
